@@ -1,0 +1,11 @@
+# config.py
+import os
+from dotenv import load_dotenv
+
+# تحميل المتغيرات من ملف .env
+load_dotenv() 
+
+# قراءة المتغيرات من البيئة
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
+# ... إلخ ...
